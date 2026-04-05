@@ -23,16 +23,6 @@ export default function Hero() {
           Learn industry-standard skills from expert instructors. Build real projects. Earn recognized certificates. Join thousands of professionals transforming their careers with Fluent.
         </p>
 
-        {/* Hero Visual Block */}
-        <div className="my-12 animate-fade-in" style={{ animationDelay: '0.3s' }}>
-          <div className="relative h-96 rounded-3xl overflow-hidden border border-primary-base/40 shadow-2xl bg-gradient-to-br from-dark-surface via-dark-card to-dark-bg/50">
-            {/* Gradient overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-dark-bg/30 via-transparent to-transparent"></div>
-
-            {/* Centered accent line */}
-            <div className="absolute top-1/2 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary-base/50 to-transparent"></div>
-          </div>
-        </div>
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16 animate-fade-in" style={{ animationDelay: '0.4s' }}>
