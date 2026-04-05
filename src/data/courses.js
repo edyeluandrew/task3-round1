@@ -8,7 +8,7 @@ export const courses = [
     duration: 24,
     rating: 4.8,
     enrollments: 12500,
-    image: "https://images.unsplash.com/photo-1627873649417-af36141f4b65?w=500&h=300&fit=crop&q=80",
+    image: "https://images.unsplash.com/photo-1517694307202-14dd9538aa97?w=600&h=400&fit=crop&q=80",
     icon: '<circle cx="12" cy="12" r="2.5" fill="%2361dafb"/><path d="M12 6c3.5 0 6.8 1.3 9 3.3l1.5-2.2C17.8 4.4 15.1 3 12 3S6.2 4.4 3.5 6.1L5 8.3C7.2 7.3 10.5 6 12 6m0 12c-3.5 0-6.8-1.3-9-3.3l-1.5 2.2C6.2 19.6 8.9 21 12 21s5.8-1.4 8.5-3.1l-1.5-2.2c-2.2 2-5.5 3.3-9 3.3z" fill="%2361dafb"/>',
     category: "Web Development",
     learningPoints: [
@@ -40,9 +40,7 @@ export const courses = [
     duration: 18,
     rating: 4.9,
     enrollments: 8900,
-    image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=500&h=300&fit=crop&q=80",
-    icon: '<rect x="2" y="2" width="20" height="20" rx="2" ry="2" fill="none" stroke="%2306b6d4" stroke-width="1.5"/><path d="M7 12h10M7 7h10M7 17h10" stroke="%2306b6d4" stroke-width="1.5" stroke-linecap="round"/>',
-    category: "Web Design",
+    image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&h=400&fit=crop&q=80",
     learningPoints: [
       "Master utility-first CSS with Tailwind",
       "Build responsive designs for all screen sizes",
@@ -72,9 +70,9 @@ export const courses = [
     duration: 48,
     rating: 4.7,
     enrollments: 15200,
-    image: "https://images.unsplash.com/photo-1633356122544-f134ef2e00ae?w=500&h=300&fit=crop&q=80",
-    icon: '<path d="M3 3h18v18H3V3zm9 13.5a4.5 4.5 0 110-9 4.5 4.5 0 010 9zm-7-7.5h2.5v2.5H5V8.5zm7 0h2.5v2.5h-2.5V8.5zm7 0h2.5v2.5h-2.5V8.5z" fill="%23f7df1e"/>',
-    category: "Web Development",
+    image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&h=400&fit=crop&q=80",
+    icon: '<rect x="2" y="2" width="20" height="20" rx="2" ry="2" fill="none" stroke="%2306b6d4" stroke-width="1.5"/><path d="M7 12h10M7 7h10M7 17h10" stroke="%2306b6d4" stroke-width="1.5" stroke-linecap="round"/>',
+    category: "Web Design",
     learningPoints: [
       "Build complete web applications with JavaScript",
       "Master Node.js and Express server development",
@@ -104,7 +102,7 @@ export const courses = [
     duration: 36,
     rating: 4.6,
     enrollments: 7300,
-    image: "https://images.unsplash.com/photo-1512941691920-25e2e7b13efb?w=500&h=300&fit=crop&q=80",
+    image: "https://images.unsplash.com/photo-1511707267537-b85faf00021e?w=600&h=400&fit=crop&q=80",
     icon: '<rect x="3" y="2" width="18" height="20" rx="2" ry="2" fill="none" stroke="%2361dafb" stroke-width="1.5"/><circle cx="9" cy="10" r="1.5" fill="%2361dafb"/><circle cx="15" cy="10" r="1.5" fill="%2361dafb"/><path d="M9 15c0-1.5.5-2 3-2s3.5.5 3.5 2" fill="none" stroke="%2361dafb" stroke-width="1.5" stroke-linecap="round"/>',
     category: "Mobile Development",
     learningPoints: [
@@ -136,7 +134,7 @@ export const courses = [
     duration: 20,
     rating: 4.8,
     enrollments: 9800,
-    image: "https://images.unsplash.com/photo-1516534775068-bb57c9c7bb9a?w=500&h=300&fit=crop&q=80",
+    image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&h=400&fit=crop&q=80",
     icon: '<rect x="2" y="2" width="20" height="20" fill="%233178c6" rx="2"/><text x="12" y="16" font-size="12" font-weight="bold" fill="white" text-anchor="middle">TS</text>',
     category: "Web Development",
     learningPoints: [
@@ -168,7 +166,7 @@ export const courses = [
     duration: 28,
     rating: 4.9,
     enrollments: 5600,
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=300&fit=crop&q=80",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop&q=80",
     icon: '<path d="M13 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" fill="%23fbbf24"/><polyline points="13 3 13 8 19 8" fill="%23fbbf24"/><path d="M12 18v-3m-3-2v5m6-3v4" stroke="%23fbbf24" stroke-width="1" stroke-linecap="round" fill="none"/>',
     category: "Web Development",
     learningPoints: [
@@ -200,7 +198,7 @@ export const courses = [
     duration: 30,
     rating: 4.7,
     enrollments: 11200,
-    image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=500&h=300&fit=crop&q=80",
+    image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&h=400&fit=crop&q=80",
     icon: '<circle cx="12" cy="12" r="9" fill="none" stroke="%239d5bd2" stroke-width="1.5"/><path d="M12 7v5l4 2.5" stroke="%239d5bd2" stroke-width="1.5" fill="none" stroke-linecap="round"/>',
     category: "Web Design",
     learningPoints: [
@@ -232,7 +230,7 @@ export const courses = [
     duration: 42,
     rating: 4.8,
     enrollments: 13400,
-    image: "https://images.unsplash.com/photo-1629904853716-f0b1b8c0b6b4?w=500&h=300&fit=crop&q=80",
+    image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&h=400&fit=crop&q=80",
     icon: '<circle cx="12" cy="12" r="10" fill="none" stroke="black" stroke-width="2"/><path d="M12 7v5l3.5 2" stroke="black" stroke-width="1.5" fill="none" stroke-linecap="round"/>',
     category: "Web Development",
     learningPoints: [
