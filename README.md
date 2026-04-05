@@ -248,8 +248,8 @@ Alternatively, you can deploy to Netlify:
    - Your app will be live
 
 ### Live Demo
-- **Demo URL**: https://YOUR_LIVE_URL (update after deployment)
-- **Repository**: https://github.com/YOUR_USERNAME/fluent
+- **Demo URL**: https://task3-round1.vercel.app/
+- **Repository**: https://github.com/edyeluandrew/task3-round1
 
 ## 📦 Libraries Used
 
