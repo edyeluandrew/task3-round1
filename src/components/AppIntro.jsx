@@ -1,4 +1,5 @@
 import { Target, Zap, Code, Trophy, Globe, Star, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function AppIntro() {
   const features = [
@@ -84,10 +85,13 @@ export default function AppIntro() {
             <p className="text-white/90 mb-8 text-lg max-w-2xl mx-auto">
               Join thousands of professionals learning with Fluent. Start your journey today.
             </p>
-            <button className="px-8 py-3 bg-white text-primary-base rounded-lg font-semibold hover:bg-accent transition-premium shadow-card hover:shadow-hover flex items-center justify-center gap-2 mx-auto">
+            <Link
+              to="/signup"
+              className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-white text-primary-base rounded-lg font-semibold hover:bg-accent transition-premium shadow-card hover:shadow-hover"
+            >
               Get Started Free
               <ArrowRight size={20} />
-            </button>
+            </Link>
           </div>
         </div>
       </div>

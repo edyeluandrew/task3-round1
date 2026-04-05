@@ -16,6 +16,18 @@ export default function CourseCard({ course }) {
             alt={course.title}
             className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
           />
+          {/* Tech Icon Badge */}
+          {course.icon && (
+            <div className="absolute bottom-3 left-3 w-10 h-10 bg-dark-card/95 backdrop-blur-sm rounded-lg border border-dark-border flex items-center justify-center shadow-card hover:bg-primary-base/20 transition-all">
+              <svg 
+                width="24" 
+                height="24" 
+                viewBox="0 0 24 24" 
+                className="w-6 h-6"
+                dangerouslySetInnerHTML={{__html: course.icon}}
+              />
+            </div>
+          )}
           {/* Rating Badge */}
           <div className="absolute top-3 right-3 px-2.5 py-1 bg-dark-card/95 backdrop-blur-sm rounded-md border border-dark-border flex items-center gap-1 shadow-card">
             <Star size={14} className="text-accent fill-accent" />

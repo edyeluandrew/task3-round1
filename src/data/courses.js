@@ -8,8 +8,28 @@ export const courses = [
     duration: 24,
     rating: 4.8,
     enrollments: 12500,
-    image: "https://images.unsplash.com/photo-1633356122544-f134324ef6db?w=500&h=300&fit=crop",
+    image: "https://images.unsplash.com/photo-1627873649417-af36141f4b65?w=500&h=300&fit=crop&q=80",
+    icon: '<circle cx="12" cy="12" r="2.5" fill="%2361dafb"/><path d="M12 6c3.5 0 6.8 1.3 9 3.3l1.5-2.2C17.8 4.4 15.1 3 12 3S6.2 4.4 3.5 6.1L5 8.3C7.2 7.3 10.5 6 12 6m0 12c-3.5 0-6.8-1.3-9-3.3l-1.5 2.2C6.2 19.6 8.9 21 12 21s5.8-1.4 8.5-3.1l-1.5-2.2c-2.2 2-5.5 3.3-9 3.3z" fill="%2361dafb"/>',
     category: "Web Development",
+    learningPoints: [
+      "Master React components and JSX syntax",
+      "Work with React hooks: useState, useEffect, useContext",
+      "Build real-world React applications",
+      "Implement advanced state management patterns",
+      "Optimize performance and debugging techniques",
+      "Deploy React apps to production"
+    ],
+    prerequisites: [
+      "Basic JavaScript knowledge (ES6+ concepts recommended)",
+      "Understanding of HTML and CSS fundamentals",
+      "Familiarity with web development concepts",
+      "Node.js and npm installed on your machine"
+    ],
+    instructor: {
+      name: "Sarah Chen",
+      title: "React Specialist & Full Stack Developer",
+      bio: "Senior developer with 8+ years of React experience at top tech companies."
+    }
   },
   {
     id: 2,
@@ -20,8 +40,28 @@ export const courses = [
     duration: 18,
     rating: 4.9,
     enrollments: 8900,
-    image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=500&h=300&fit=crop",
+    image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=500&h=300&fit=crop&q=80",
+    icon: '<rect x="2" y="2" width="20" height="20" rx="2" ry="2" fill="none" stroke="%2306b6d4" stroke-width="1.5"/><path d="M7 12h10M7 7h10M7 17h10" stroke="%2306b6d4" stroke-width="1.5" stroke-linecap="round"/>',
     category: "Web Design",
+    learningPoints: [
+      "Master utility-first CSS with Tailwind",
+      "Build responsive designs for all screen sizes",
+      "Create custom Tailwind components and plugins",
+      "Implement dark mode and theme switching",
+      "Optimize CSS bundle size and performance",
+      "Design system best practices"
+    ],
+    prerequisites: [
+      "Solid understanding of HTML and CSS",
+      "Basic knowledge of JavaScript",
+      "Familiarity with Node.js and npm",
+      "Understanding of web design principles"
+    ],
+    instructor: {
+      name: "Marcus Rivera",
+      title: "UI/UX Developer & Design Systems Lead",
+      bio: "Expert in design systems with experience at leading design-first companies."
+    }
   },
   {
     id: 3,
@@ -32,8 +72,28 @@ export const courses = [
     duration: 48,
     rating: 4.7,
     enrollments: 15200,
-    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=300&fit=crop",
+    image: "https://images.unsplash.com/photo-1633356122544-f134ef2e00ae?w=500&h=300&fit=crop&q=80",
+    icon: '<path d="M3 3h18v18H3V3zm9 13.5a4.5 4.5 0 110-9 4.5 4.5 0 010 9zm-7-7.5h2.5v2.5H5V8.5zm7 0h2.5v2.5h-2.5V8.5zm7 0h2.5v2.5h-2.5V8.5z" fill="%23f7df1e"/>',
     category: "Web Development",
+    learningPoints: [
+      "Build complete web applications with JavaScript",
+      "Master Node.js and Express server development",
+      "Work with MongoDB and databases",
+      "Implement authentication and authorization",
+      "Deploy applications to cloud platforms",
+      "API development and RESTful design patterns"
+    ],
+    prerequisites: [
+      "Strong JavaScript fundamentals",
+      "Understanding of web architecture",
+      "Basic database concepts",
+      "Comfortable with terminal/command line"
+    ],
+    instructor: {
+      name: "Alex Thompson",
+      title: "Full Stack Engineer & DevOps Specialist",
+      bio: "10+ years building scalable web applications at Fortune 500 companies."
+    }
   },
   {
     id: 4,
@@ -44,8 +104,28 @@ export const courses = [
     duration: 36,
     rating: 4.6,
     enrollments: 7300,
-    image: "https://images.unsplash.com/photo-1512941691920-25bdb3b206dd?w=500&h=300&fit=crop",
+    image: "https://images.unsplash.com/photo-1512941691920-25e2e7b13efb?w=500&h=300&fit=crop&q=80",
+    icon: '<rect x="3" y="2" width="18" height="20" rx="2" ry="2" fill="none" stroke="%2361dafb" stroke-width="1.5"/><circle cx="9" cy="10" r="1.5" fill="%2361dafb"/><circle cx="15" cy="10" r="1.5" fill="%2361dafb"/><path d="M9 15c0-1.5.5-2 3-2s3.5.5 3.5 2" fill="none" stroke="%2361dafb" stroke-width="1.5" stroke-linecap="round"/>',
     category: "Mobile Development",
+    learningPoints: [
+      "Build native iOS and Android apps with React",
+      "Master React Native components and APIs",
+      "Implement navigation and routing",
+      "Work with native device features and permissions",
+      "Deploy to Apple App Store and Google Play",
+      "Performance optimization for mobile platforms"
+    ],
+    prerequisites: [
+      "Solid React knowledge required",
+      "JavaScript ES6+ proficiency",
+      "Understanding of mobile app concepts",
+      "Node.js and React Native CLI installed"
+    ],
+    instructor: {
+      name: "Priya Patel",
+      title: "Mobile App Developer & React Native Expert",
+      bio: "Launched 20+ mobile apps on iOS and Android with millions of downloads."
+    }
   },
   {
     id: 5,
@@ -56,8 +136,28 @@ export const courses = [
     duration: 20,
     rating: 4.8,
     enrollments: 9800,
-    image: "https://images.unsplash.com/photo-1511874642486-4fee636cedcc?w=500&h=300&fit=crop",
+    image: "https://images.unsplash.com/photo-1516534775068-bb57c9c7bb9a?w=500&h=300&fit=crop&q=80",
+    icon: '<rect x="2" y="2" width="20" height="20" fill="%233178c6" rx="2"/><text x="12" y="16" font-size="12" font-weight="bold" fill="white" text-anchor="middle">TS</text>',
     category: "Web Development",
+    learningPoints: [
+      "Master TypeScript types, interfaces, and generics",
+      "Migrate JavaScript projects to TypeScript",
+      "Work with decorators and advanced types",
+      "Build type-safe React and Node applications",
+      "Debug and troubleshoot TypeScript issues",
+      "Best practices for enterprise TypeScript projects"
+    ],
+    prerequisites: [
+      "Intermediate JavaScript knowledge",
+      "Understanding of OOP principles",
+      "Familiarity with modern tooling (webpack, npm)",
+      "Basic knowledge of a framework (React, Node.js, etc.)"
+    ],
+    instructor: {
+      name: "David Kim",
+      title: "TypeScript Expert & Architecture Lead",
+      bio: "Led TypeScript migrations for teams at major tech companies."
+    }
   },
   {
     id: 6,
@@ -68,8 +168,28 @@ export const courses = [
     duration: 28,
     rating: 4.9,
     enrollments: 5600,
-    image: "https://images.unsplash.com/photo-1460925895917-afd651c16c1f?w=500&h=300&fit=crop",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=300&fit=crop&q=80",
+    icon: '<path d="M13 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" fill="%23fbbf24"/><polyline points="13 3 13 8 19 8" fill="%23fbbf24"/><path d="M12 18v-3m-3-2v5m6-3v4" stroke="%23fbbf24" stroke-width="1" stroke-linecap="round" fill="none"/>',
     category: "Web Development",
+    learningPoints: [
+      "Measure and analyze web performance metrics",
+      "Implement lazy loading and code splitting",
+      "Optimize images and assets for the web",
+      "Master caching strategies and CDNs",
+      "Improve Core Web Vitals scores",
+      "Monitor performance in production environments"
+    ],
+    prerequisites: [
+      "Understanding of web development fundamentals",
+      "Familiarity with browser DevTools",
+      "Basic knowledge of HTTP and networking",
+      "Experience with at least one web framework"
+    ],
+    instructor: {
+      name: "Elena Volkova",
+      title: "Performance Engineer & Web Optimization Specialist",
+      bio: "Optimized apps serving millions of users; expert in Core Web Vitals."
+    }
   },
   {
     id: 7,
@@ -80,8 +200,28 @@ export const courses = [
     duration: 30,
     rating: 4.7,
     enrollments: 11200,
-    image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=500&h=300&fit=crop",
+    image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=500&h=300&fit=crop&q=80",
+    icon: '<circle cx="12" cy="12" r="9" fill="none" stroke="%239d5bd2" stroke-width="1.5"/><path d="M12 7v5l4 2.5" stroke="%239d5bd2" stroke-width="1.5" fill="none" stroke-linecap="round"/>',
     category: "Web Design",
+    learningPoints: [
+      "Master design thinking and user research",
+      "Create wireframes and prototypes",
+      "Implement design best practices and patterns",
+      "Build design systems and component libraries",
+      "Conduct user testing and iterate designs",
+      "Collaboration between design and development teams"
+    ],
+    prerequisites: [
+      "Basic design software knowledge (Figma recommended)",
+      "Understanding of web and mobile platforms",
+      "Communication and collaboration skills",
+      "Interest in user psychology and behavior"
+    ],
+    instructor: {
+      name: "Jessica Wong",
+      title: "Lead UX Designer & Design Systems Architect",
+      bio: "Designed interfaces for platforms used by millions; design systems expert."
+    }
   },
   {
     id: 8,
@@ -92,7 +232,27 @@ export const courses = [
     duration: 42,
     rating: 4.8,
     enrollments: 13400,
-    image: "https://images.unsplash.com/photo-1629904853716-f0b1b8c0b6b4?w=500&h=300&fit=crop",
+    image: "https://images.unsplash.com/photo-1629904853716-f0b1b8c0b6b4?w=500&h=300&fit=crop&q=80",
+    icon: '<circle cx="12" cy="12" r="10" fill="none" stroke="black" stroke-width="2"/><path d="M12 7v5l3.5 2" stroke="black" stroke-width="1.5" fill="none" stroke-linecap="round"/>',
     category: "Web Development",
+    learningPoints: [
+      "Master Next.js framework and React integration",
+      "Implement Server-Side Rendering (SSR) and Static Generation (SSG)",
+      "Build API routes and backend functionality",
+      "Optimize images and performance with Next.js",
+      "Deploy applications to Vercel and other platforms",
+      "Advanced features: middleware, ISR, and edge functions"
+    ],
+    prerequisites: [
+      "Strong React fundamentals required",
+      "JavaScript and Node.js knowledge",
+      "Understanding of web deployment concepts",
+      "Experience with version control (Git)"
+    ],
+    instructor: {
+      name: "James Morrison",
+      title: "Next.js Expert & Senior Full Stack Developer",
+      bio: "Built and deployed 50+ Next.js applications; Vercel certified instructor."
+    }
   },
 ];

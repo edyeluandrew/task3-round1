@@ -85,10 +85,10 @@ Fluent is a full-featured course discovery and learning platform frontend featur
 
 ### Installation
 
-1. **Clone or download the project**
+1. **Clone the repository**
    ```bash
-   git clone <repository-url>
-   cd task3
+   git clone https://github.com/YOUR_USERNAME/fluent.git
+   cd fluent
    ```
 
 2. **Install dependencies**
@@ -133,21 +133,24 @@ src/
 ├── pages/
 │   ├── Landing.jsx         # Home page (hero + featured courses)
 │   ├── CoursesList.jsx     # Browse all courses page
-│   └── CourseDetail.jsx    # Individual course detail page
+│   ├── CourseDetail.jsx    # Individual course detail page
+│   ├── SignUp.jsx          # User registration page
+│   └── About.jsx           # About and features page
 ├── data/
-│   └── courses.js          # Mock course data (8 courses)
+│   └── courses.js          # Mock course data (8 courses with full details)
 ├── App.jsx                 # Main app with routing setup
 ├── main.jsx                # React entry point
-├── index.css               # Tailwind CSS with custom utilities
-├── App.css                 # Component-specific styles (legacy)
-└── vite.config.js          # Vite configuration
+├── index.css               # Global Tailwind CSS and custom styles
+└── vite.config.js          # Vite build configuration
 
 public/
-├── index.html              # HTML template
+├── index.html              # Main HTML template
 └── ...
 
-tailwind.config.js          # Tailwind CSS configuration
-postcss.config.js           # PostCSS configuration
+tailwind.config.js          # Tailwind CSS theme configuration
+postcss.config.js           # PostCSS processing configuration
+vercel.json                 # Vercel deployment configuration
+package.json                # Project dependencies and scripts
 package.json                # Dependencies and scripts
 ```
 
@@ -173,15 +176,20 @@ Each course object includes:
 ## 🎨 Design System
 
 ### Color Palette
-- **Primary**: #0ea5e9 (Sky Blue)
-- **Primary Dark**: #0284c7
-- **Primary Darker**: #0369a1
-- **Slate Grays**: Various shades for text and backgrounds
+- **Primary**: #C62828 (Deep Red)
+- **Primary Hover**: #E53935 (Light Red)
+- **Background**: #0B0B0F (Deep Dark)
+- **Surface**: #14141A (Card Background)
+- **Border**: #2A2A35 (Subtle Border)
+- **Text Light**: #F8F7F4 (Primary Text)
+- **Text Muted**: #A1A1AA (Secondary Text)
+- **Accent**: #F59E0B (Gold/Secondary)
 
 ### Typography
-- **Font Family**: Inter (Google Fonts)
-- **Headings**: Bold, hierarchical sizing
-- **Body**: Regular weight, clear readability
+- **Display Font**: Bebas Neue (headings and branding)
+- **Body Font**: Inter (content and UI text)
+- **Headings**: Bold, hierarchical sizing with letter-spacing
+- **Body**: Regular weight (400), excellent readability at all sizes
 
 ### Spacing & Layout
 - **Max Width**: 1280px (7xl container)
@@ -198,6 +206,72 @@ The app is fully responsive with breakpoints for:
 All components adapt gracefully with:
 - Collapsible mobile navigation
 - Flexible grid layouts
+- Touch-optimized inputs and buttons
+
+## 🚀 Deployment
+
+### Vercel (Recommended)
+Vercel is the creator of Next.js and provides excellent support for React + Vite applications.
+
+1. **Push to GitHub**
+   ```bash
+   git push origin main
+   ```
+
+2. **Deploy to Vercel**
+   - Go to [vercel.com](https://vercel.com)
+   - Click "New Project"
+   - Select your GitHub repository
+   - Vercel auto-detects Vite configuration
+   - Click "Deploy"
+   - Your app will be live in ~1 minute
+
+3. **Custom Domain**
+   - After deployment, go to project settings
+   - Add your custom domain in the "Domains" tab
+
+### Netlify
+Alternatively, you can deploy to Netlify:
+
+1. **Create netlify.toml**
+   ```toml
+   [build]
+     command = "npm run build"
+     publish = "dist"
+   ```
+
+2. **Push to GitHub and deploy**
+   - Go to [netlify.com](https://netlify.com)
+   - Click "New site from Git"
+   - Select your repository
+   - Netlify will auto-detect build settings
+   - Your app will be live
+
+### Live Demo
+- **Demo URL**: https://YOUR_LIVE_URL (update after deployment)
+- **Repository**: https://github.com/YOUR_USERNAME/fluent
+
+## 📦 Libraries Used
+
+### Core Dependencies
+- **React** (^19.2.4) - UI framework
+- **React DOM** (^19.2.4) - React rendering
+- **React Router DOM** (^7.13.2) - Client-side routing
+
+### Styling
+- **Tailwind CSS** (^3.4.19) - Utility-first CSS framework
+- **PostCSS** (^8.5.8) - CSS transformations
+- **Autoprefixer** (^10.4.27) - Browser prefix automation
+
+### Build & Dev Tools
+- **Vite** (^8.0.1) - Lightning-fast build tool
+- **@vitejs/plugin-react** (^6.0.1) - React support for Vite
+- **ESLint** (^9.39.4) - Code quality and linting
+
+### UI Components
+- **Lucide React** (^1.7.0) - Beautiful icon library
+
+All components adapt gracefully with:
 - Touch-friendly buttons and inputs
 - Optimized font sizes
 

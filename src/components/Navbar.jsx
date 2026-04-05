@@ -1,9 +1,12 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
+
+  const isActive = (path) => location.pathname === path;
 
   return (
     <nav className="sticky top-0 z-50 bg-dark-bg/95 backdrop-blur-md border-b border-dark-border">
@@ -21,19 +24,30 @@ export default function Navbar() {
           <div className="hidden md:flex items-center gap-8">
             <Link
               to="/"
-              className="text-text-muted hover:text-text-light transition-premium font-medium text-sm"
+              className={`transition-premium font-medium text-sm ${
+                isActive('/') 
+                  ? 'text-primary-base font-semibold' 
+                  : 'text-text-muted hover:text-text-light'
+              }`}
             >
               Home
             </Link>
             <Link
               to="/courses"
-              className="text-text-muted hover:text-text-light transition-premium font-medium text-sm"
+              className={`transition-premium font-medium text-sm ${
+                isActive('/courses') 
+                  ? 'text-primary-base font-semibold' 
+                  : 'text-text-muted hover:text-text-light'
+              }`}
             >
               Courses
             </Link>
-            <button className="px-6 py-2.5 bg-primary-base hover:bg-primary-hover text-white rounded-lg font-semibold transition-premium shadow-md hover:shadow-hover">
+            <Link
+              to="/signup"
+              className="px-6 py-2.5 bg-primary-base hover:bg-primary-hover text-white rounded-lg font-semibold transition-premium shadow-md hover:shadow-hover"
+            >
               Sign Up
-            </button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -50,21 +64,33 @@ export default function Navbar() {
           <div className="md:hidden pb-4 border-t border-dark-border pt-4 animate-fade-in">
             <Link
               to="/"
-              className="block px-4 py-2 text-text-muted hover:text-text-light hover:bg-dark-card rounded-lg mb-2 transition-premium"
+              className={`block px-4 py-2 rounded-lg mb-2 transition-premium font-medium ${
+                isActive('/') 
+                  ? 'bg-dark-card text-primary-base' 
+                  : 'text-text-muted hover:text-text-light hover:bg-dark-card'
+              }`}
               onClick={() => setIsOpen(false)}
             >
               Home
             </Link>
             <Link
               to="/courses"
-              className="block px-4 py-2 text-text-muted hover:text-text-light hover:bg-dark-card rounded-lg mb-2 transition-premium"
+              className={`block px-4 py-2 rounded-lg mb-2 transition-premium font-medium ${
+                isActive('/courses') 
+                  ? 'bg-dark-card text-primary-base' 
+                  : 'text-text-muted hover:text-text-light hover:bg-dark-card'
+              }`}
               onClick={() => setIsOpen(false)}
             >
               Courses
             </Link>
-            <button className="w-full px-4 py-2.5 bg-primary-base hover:bg-primary-hover text-white rounded-lg font-semibold mt-4 transition-premium">
+            <Link
+              to="/signup"
+              className="w-full px-4 py-2.5 bg-primary-base hover:bg-primary-hover text-white rounded-lg font-semibold mt-4 transition-premium block text-center"
+              onClick={() => setIsOpen(false)}
+            >
               Sign Up
-            </button>
+            </Link>
           </div>
         )}
       </div>
