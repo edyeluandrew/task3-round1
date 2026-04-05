@@ -26,27 +26,11 @@ export default function Hero() {
         {/* Hero Visual Block */}
         <div className="my-12 animate-fade-in" style={{ animationDelay: '0.3s' }}>
           <div className="relative h-96 rounded-3xl overflow-hidden border border-primary-base/40 shadow-2xl bg-gradient-to-br from-dark-surface via-dark-card to-dark-bg/50">
-            {/* Animated grid background */}
-            <div className="absolute inset-0 opacity-40">
-              <svg className="w-full h-full" preserveAspectRatio="none">
-                <defs>
-                  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-                    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="currentColor" strokeWidth="1" className="text-primary-base/60" />
-                  </pattern>
-                </defs>
-                <rect width="100%" height="100%" fill="url(#grid)" />
-              </svg>
-            </div>
-
             {/* Gradient overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-dark-bg/40 via-transparent to-transparent"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-dark-bg/30 via-transparent to-transparent"></div>
 
             {/* Centered accent line */}
-            <div className="absolute top-1/2 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary-base/70 to-transparent"></div>
-
-            {/* Corner accents */}
-            <div className="absolute top-0 left-0 w-32 h-32 border-l-2 border-t-2 border-primary-base/30 rounded-bl-3xl"></div>
-            <div className="absolute bottom-0 right-0 w-32 h-32 border-r-2 border-b-2 border-primary-base/30 rounded-tl-3xl"></div>
+            <div className="absolute top-1/2 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary-base/50 to-transparent"></div>
           </div>
         </div>
 
